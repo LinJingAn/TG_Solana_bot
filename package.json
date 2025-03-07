@@ -1,0 +1,26 @@
+{
+  "name": "my-telegram-bot",
+  "version": "1.0.0",
+  "description": "A Telegram bot using grammY and Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon bot.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "grammy": "^1.35.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "grammy",
+    "nodejs"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
