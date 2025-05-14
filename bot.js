@@ -45,7 +45,6 @@ bot.use(
   })
 );
 
-// Handle the /start command
 bot.command("start", async (ctx) => {
   await ctx.reply("Welcome! To filter meme coins.", {
     reply_markup: getMenu(ctx),
@@ -75,7 +74,6 @@ bot.callbackQuery("confirm", async (ctx) => {
     const tokenInfo = await (
       await fetch(`https://api.rugcheck.xyz/v1/tokens/${mintAddress}/report`)
     ).json();
-    // console.log(tokenInfo.markets);
     const mintAuthority = tokenInfo.token
       ? tokenInfo.token.mintAuthority
         ? "🟢 Yes"
