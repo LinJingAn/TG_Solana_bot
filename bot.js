@@ -2,7 +2,6 @@ const { Bot, InlineKeyboard, session } = require("grammy");
 const express = require("express");
 require("dotenv").config();
 
-// Replace "YOUR_BOT_TOKEN" with the token you got from @BotFather
 const bot = new Bot(process.env.TELEGRAM_BOT_TOKEN);
 
 function formatLargeNumber(num) {
@@ -23,8 +22,7 @@ function formatMins(num) {
 }
 
 const escapeMarkdownV2 = (text) => {
-  return text.replace(/[_*[\]()~`>#+-=|{}.!]/g, "\\$&"); // Escapes special characters for MarkdownV2
-};
+  return text.replace(/[_*[\]()~`>#+-=|{}.!]/g, "\\$&");
 
 bot.use(
   session({
@@ -306,7 +304,7 @@ bot.on("message:text", async (ctx) => {
 bot.callbackQuery(/toggle_(twitter|website|telegram)/, async (ctx) => {
   await ctx.answerCallbackQuery({ text: "Processing..." });
   const social = ctx.match[1];
-  ctx.session.socials[social] = !ctx.session.socials[social]; // toggle state
+  ctx.session.socials[social] = !ctx.session.socials[social];
   await ctx.editMessageReplyMarkup({
     reply_markup: getMenu(ctx),
   });
@@ -315,7 +313,6 @@ bot.callbackQuery(/toggle_(twitter|website|telegram)/, async (ctx) => {
   });
 });
 
-// Start the bot
 bot.start();
 
 const app = express();
