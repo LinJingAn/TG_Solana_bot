@@ -18,7 +18,7 @@ function formatMins(num) {
 }
 
 (async () => {
-    const mintAddress = '367ALJsiyi3gA3MfD8pmkxHCQac1SFTMEaJvJLZppump';
+    const mintAddress = '';
     console.log(mintAddress)
     const tokenInfo = await (await fetch(`https://api.rugcheck.xyz/v1/tokens/${mintAddress}/report`)).json();
     const name = tokenInfo.tokenMeta.name;
