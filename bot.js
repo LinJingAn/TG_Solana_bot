@@ -23,6 +23,7 @@ function formatMins(num) {
 
 const escapeMarkdownV2 = (text) => {
   return text.replace(/[_*[\]()~`>#+-=|{}.!]/g, "\\$&");
+}
 
 bot.use(
   session({
