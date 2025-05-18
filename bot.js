@@ -58,6 +58,7 @@ bot.callbackQuery("confirm", async (ctx) => {
   let cnt = 0;
   ctx.reply("I'm fetching, please wait...");
 
+  
   const recentTokens = await (
     await fetch("https://api.rugcheck.xyz/v1/stats/recent")
   ).json();
