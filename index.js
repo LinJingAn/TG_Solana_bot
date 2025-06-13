@@ -10,6 +10,7 @@ function formatLargeNumber(num) {
     return num.toString();
 }
 
+//init
 function formatMins(num) {
     if(num >= 60){
         return Math.floor(num / 60) + 'hour ' + (num % 60) + 'mins ago'
