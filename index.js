@@ -73,7 +73,6 @@ function formatMins(num) {
 🪣 LP Tokens: ${lpTokenPercentage}%`)
 })();
 
-//add comment
 /*
 📌 Lovely (LVY)
 💰 Price: $0.00014
