@@ -329,8 +329,6 @@ app.listen(port, () => {
 
 /*
 
-🚀 New Token Found on Raydium! 🚀  
-
 🕒 Created: 2 mins ago  
 🔹 Token Name: PEPE 2.0 ($PEPE2)  
 🔹 Contract Address: ABC123456789...  
