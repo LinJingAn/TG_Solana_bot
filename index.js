@@ -17,7 +17,6 @@ function formatMins(num) {
         return num + 'mins ago'
 }
 
-//fix async
 (async () => {
     const mintAddress = '';
     console.log(mintAddress)
