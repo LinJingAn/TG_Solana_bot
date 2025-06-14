@@ -263,6 +263,8 @@ const getMenu = (ctx) => {
     .text(`Top Holding Max ${ctx.session.topHoldingMax}%?`, "topHoldingMax")
     .row()
     .text("Confirm", "confirm");
+    console.log("sss");
+    
 };
 
 const filterFields = [
