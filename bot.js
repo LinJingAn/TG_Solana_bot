@@ -62,8 +62,6 @@ bot.callbackQuery("confirm", async (ctx) => {
     await fetch("https://api.rugcheck.xyz/v1/stats/recent")
   ).json();
 
-  
-
   for (let i = 0; i < recentTokens.length; i++) {
     const mintAddress = recentTokens[i].mint;
     const mintAddressCopyable =
