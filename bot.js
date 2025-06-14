@@ -316,7 +316,6 @@ bot.callbackQuery(/toggle_(twitter|website|telegram)/, async (ctx) => {
   });
 });
 
-//start bot
 bot.start();
 
 const app = express();
@@ -328,8 +327,6 @@ app.listen(port, () => {
 });
 
 /*
-
-🚀 New Token Found on Raydium! 🚀  
 
 🕒 Created: 2 mins ago  
 🔹 Token Name: PEPE 2.0 ($PEPE2)  
