@@ -325,19 +325,3 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log("Server Listening on PORT:", port);
 });
-
-/*
-
-🛠 Minable: 🔴 No  
-❄️ Freezable: 🟢 Yes  
-
-🔹 Socials:  
-   - ✅ Telegram: [Join](https://t.me/PEPE2)  
-   - ✅ X: [Twitter](https://twitter.com/PEPE2)  
-   - ❌ Website: Not Found  
-
-💰 Buy Now: [Trade on Raydium](https://raydium.io/swap/PEPE2)  
-🎯 Instant Snipe: [Trojan Buy](https://trojan.com/buy/PEPE2)  
-
-⏳ *Detected instantly as liquidity was added!*
-*/
