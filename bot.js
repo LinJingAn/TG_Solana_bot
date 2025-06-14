@@ -147,6 +147,8 @@ bot.callbackQuery("confirm", async (ctx) => {
         (Date.now() - dexpair.pairCreatedAt) / 60000
       );
       if (createdAt <= pairCreatedAt) createdAt = pairCreatedAt;
+      console.log(createdAt);
+      
     });
     const website = pair.info
       ? pair.info.websites.length
