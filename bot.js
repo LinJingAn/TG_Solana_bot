@@ -62,8 +62,6 @@ bot.callbackQuery("confirm", async (ctx) => {
     await fetch("https://api.rugcheck.xyz/v1/stats/recent")
   ).json();
 
-  
-
   for (let i = 0; i < recentTokens.length; i++) {
     const mintAddress = recentTokens[i].mint;
     const mintAddressCopyable =
@@ -125,7 +123,7 @@ bot.callbackQuery("confirm", async (ctx) => {
 
     let topHolderPercentage =
       tokenInfo.topHolders[0]?.owner !=
-      "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1"
+      ""
         ? tokenInfo.topHolders[0]?.pct.toFixed(2)
         : tokenInfo.topHolders[1]?.pct.toFixed(2);
     let lpTokenPercentage = tokenInfo.topHolders[0]?.pct.toFixed(2);
@@ -147,6 +145,8 @@ bot.callbackQuery("confirm", async (ctx) => {
         (Date.now() - dexpair.pairCreatedAt) / 60000
       );
       if (createdAt <= pairCreatedAt) createdAt = pairCreatedAt;
+      console.log(createdAt);
+      
     });
     const website = pair.info
       ? pair.info.websites.length
@@ -263,6 +263,8 @@ const getMenu = (ctx) => {
     .text(`Top Holding Max ${ctx.session.topHoldingMax}%?`, "topHoldingMax")
     .row()
     .text("Confirm", "confirm");
+    console.log("sss");
+    
 };
 
 const filterFields = [
@@ -314,6 +316,7 @@ bot.callbackQuery(/toggle_(twitter|website|telegram)/, async (ctx) => {
   });
 });
 
+//start bot
 bot.start();
 
 const app = express();
@@ -325,6 +328,7 @@ app.listen(port, () => {
 });
 
 /*
+
 🚀 New Token Found on Raydium! 🚀  
 
 🕒 Created: 2 mins ago  
