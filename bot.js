@@ -46,7 +46,6 @@ bot.use(
   })
 );
 
-//command start
 bot.command("start", async (ctx) => {
   await ctx.reply("Welcome! To filter meme coins.", {
     reply_markup: getMenu(ctx),
