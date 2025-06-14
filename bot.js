@@ -325,29 +325,3 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log("Server Listening on PORT:", port);
 });
-
-/*
-
-🕒 Created: 2 mins ago  
-🔹 Token Name: PEPE 2.0 ($PEPE2)  
-🔹 Contract Address: ABC123456789...  
-🔹 Price: 0.000023 SOL  
-🔹 Market Cap: $50K  
-🔹 Total Supply: 1B $PEPE2  
-🔹 Liquidity Locked: ✅ $12.5K USD  
-🔹 Dev Holdings: 2.5%  
-🔹 LP Tokens in Pool: 10% of Supply  
-
-🛠 Minable: 🔴 No  
-❄️ Freezable: 🟢 Yes  
-
-🔹 Socials:  
-   - ✅ Telegram: [Join](https://t.me/PEPE2)  
-   - ✅ X: [Twitter](https://twitter.com/PEPE2)  
-   - ❌ Website: Not Found  
-
-💰 Buy Now: [Trade on Raydium](https://raydium.io/swap/PEPE2)  
-🎯 Instant Snipe: [Trojan Buy](https://trojan.com/buy/PEPE2)  
-
-⏳ *Detected instantly as liquidity was added!*
-*/
