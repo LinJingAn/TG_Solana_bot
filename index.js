@@ -72,16 +72,3 @@ function formatMins(num) {
 🏦 Top Holder: ${topHolderPercentage}%
 🪣 LP Tokens: ${lpTokenPercentage}%`)
 })();
-
-/*
-📌 Lovely (LVY)
-💰 Price: $0.00014
-🆔 CA: 7abc...3xyz
-⏳ Created: 2 hours ago
-📈 Market Cap: $60,000
-💧 Liquidity: $12,000
-💵 Total Supply: 1.24B
-👨‍💻 Dev Hold: 2.8%
-🏦 Top Holder: 9.7%
-🪣 LP Tokens: 39%
-*/
