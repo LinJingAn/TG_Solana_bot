@@ -61,6 +61,7 @@ function formatMins(num) {
     const pair = dexScreenerData.pairs[0];
     const createdAt = formatMins(Math.floor((Date.now() - pair.pairCreatedAt) / 60000));
 
+    //help
     console.log(`📌 ${name} (${symbol})
 💰 Price: ${price}
 🆔 CA: ${mintAddress}
